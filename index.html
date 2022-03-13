@@ -6,15 +6,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hotel Fênix | Página Inicial</title>
         <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/base.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
             rel="stylesheet">
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/main/cabecalho.css">
+        <link rel="stylesheet" href="assets/css/main/reservas.css">
     </head>
     <body>
         <header>
             <section class="cabecalho">
-                <div class="cabecalho container">
+                <div class="cabecalho__container">
+                    <img src="assets/img/Logo.png" alt="Logo Hotel Fênix"
+                        class="logo">
                     <div class="cabecalho__cadastro">
                         <button class="cadastro__botao"><i class="fa fa-fw
                                 fa-user"></i>
@@ -26,7 +31,6 @@
                                 href="cadastro.html">Cadastre-se</a>
                         </div>
                     </div>
-                    <img src="" alt="" class="logo">
                     <div class="cabecalho__menu">
                         <a href="" class="cabecalho__menu__item">Inicio</a>
                         <a href="" class="cabecalho__menu__item">Quartos</a>
@@ -38,6 +42,51 @@
                 </div>
             </section>
         </header>
+        <main>
+            <section class="reservas">
+                <div class="reserva__container">
+                    <form action="" class="reserva__formulario">
+                        <div class="reserva__formulario___check">
+                            <label for="data">Check In</label>
+                            <input class="checkIn" type="date" id="data"
+                                name="checkIn">
+                        </div>
+                        <div class="reserva__formulario___check">
+                            <label for="data">Check Out</label>
+                            <input class="CheckOut" type="date" id="data"
+                                name="checkOut">
+                        </div>
+                        <div class="reserva__selecao">
+                            <label class="room" for="quartos">Quartos</label>
+                            <select id="quartos" name="">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <label class="adult" for="adultos">Adultos</label>
+                            <select id="adultos" name="adultos">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
 
+                            <label class="children" for="criancas">Crianças</label>
+                            <select id="criancas" name="criancas">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <button class="reservas__botao">Enviar</button>
+                    </form>
+                </div>
+            </section>
+        </main>
     </body>
 </html>

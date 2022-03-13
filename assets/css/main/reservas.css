@@ -1,0 +1,9 @@
+.reserva__container {
+  margin: 0 auto;
+  text-align: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+.reserva__formulario___check {
+  display: block;
+}
