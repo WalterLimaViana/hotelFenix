@@ -1,9 +1,34 @@
 .reserva__container {
   margin: 0 auto;
-  text-align: center;
-  flex-direction: column;
+  /* text-align: center; */
+  /* flex-direction: column; */
   padding: 1rem;
+  display: inline-block;
 }
-.reserva__formulario___check {
-  display: block;
+.reserva__formulario {
+  /* flex-direction: row; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+/* .reserva__formulario___check {
+  display: inline-block;
+} */
+.reserva__formulario___check-in {
+  grid-column: 1 / 3;
+  flex-direction: column;
+}
+.reserva__formulario___check-out {
+  grid-column: 1 / 3;
+  flex-direction: column;
+}
+.reserva__selecao {
+  grid-column: 3;
+  grid-row: 1 / 3;
+}
+
+#quartos,
+#adultos,
+#criancas {
+  margin-right: 5px;
 }
