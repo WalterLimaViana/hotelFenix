@@ -22,3 +22,10 @@ li {
 .rodape-informacao-dev {
   text-align: center;
 }
+
+@media screen and (min-width: 590px) {
+  .rodape-titulo {
+    text-align: left;
+    padding-left: 4rem;
+  }
+}

@@ -7,6 +7,7 @@
   display: inline-block;
 }
 .reserva__formulario {
+  width: 340px;
   margin: 0.9rem 1rem;
   background-color: #d6eaff;
   padding: 1rem;
@@ -14,17 +15,16 @@
   grid-template-columns: auto auto auto auto;
   grid-template-rows: repeat(3, 1fr);
 }
-.reserva__formulario___check-in {
-  grid-column: 1 / 3;
-  flex-direction: column;
-}
+.reserva__formulario___check-in,
 .reserva__formulario___check-out {
   grid-column: 1 / 3;
   flex-direction: column;
+  padding-left: 1rem;
 }
 .reserva__selecao {
   grid-column: 3;
   grid-row: 1 / 3;
+  padding-left: 1rem;
 }
 .reservas__botao {
   grid-column: 4;
@@ -45,4 +45,44 @@ select {
   margin: 0.1rem 0 0.8rem 0rem;
   text-align: center;
   padding-left: 0.9rem;
+}
+
+@media screen and (min-width: 594px) {
+  .reserva__formulario {
+    height: 280px;
+    width: 560px;
+  }
+  .reserva__formulario {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .reserva__formulario___check-in {
+    grid-column: 1;
+  }
+  .reserva__formulario___check-out {
+    grid-column: 1;
+  }
+  .reserva__selecao {
+    grid-column: 1 / 3;
+    grid-row: 3;
+  }
+  .reservas__botao {
+    grid-column: 2;
+    grid-row: 4;
+  }
+  select {
+    margin: 1rem 0 1rem 0rem;
+    text-align: center;
+    padding-left: 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .reserva__formulario {
+    height: 300px;
+    width: 630px;
+  }
+  .reservas__botao {
+    grid-column: 3;
+    grid-row: 4;
+  }
 }
