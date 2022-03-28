@@ -1,19 +1,19 @@
+.reservas {
+  background-color: #a6cbf3;
+}
 .reserva__container {
-  margin: 0 auto;
-  /* text-align: center; */
-  /* flex-direction: column; */
-  padding: 1rem;
+  margin: 0 auto 1.5rem;
+  padding: 2rem 1rem 1rem 0.5rem;
   display: inline-block;
 }
 .reserva__formulario {
-  /* flex-direction: row; */
+  margin: 0.9rem 1rem;
+  background-color: #d6eaff;
+  padding: 1rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: auto auto auto auto;
   grid-template-rows: repeat(3, 1fr);
 }
-/* .reserva__formulario___check {
-  display: inline-block;
-} */
 .reserva__formulario___check-in {
   grid-column: 1 / 3;
   flex-direction: column;
@@ -26,9 +26,23 @@
   grid-column: 3;
   grid-row: 1 / 3;
 }
+.reservas__botao {
+  grid-column: 4;
+  grid-row: 3;
+  padding: 0 0.8rem;
+  background-color: #00abe9;
+  color: white;
+  font-size: 16px;
+  border: none;
+  width: 10rem;
+  height: 4rem;
+  border-radius: 3px;
+  text-align: center;
+  margin-top: 8px;
+}
 
-#quartos,
-#adultos,
-#criancas {
-  margin-right: 5px;
+select {
+  margin: 0.1rem 0 0.8rem 0rem;
+  text-align: center;
+  padding-left: 0.9rem;
 }
